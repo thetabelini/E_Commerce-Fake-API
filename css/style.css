@@ -5364,3 +5364,20 @@ a.text-dark:hover, a.text-dark:focus {
     transform: translateY(-15px);
   }
 }
+
+.bodyDetalhes {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.imgDetalhes {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.price {
+  color: rgb(99, 14, 14);
+  font-weight: bold;
+  font-size: 1.2em;
+}

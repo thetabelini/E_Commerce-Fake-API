@@ -17,9 +17,11 @@
 
     <!-- Diretorio css -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- <script src="myscripts.js"></script> -->
 </head>
 
 <body>
+    
     <!-- Barra superior inicio -->
     <div class="container-fluid">
         <div class="row bg-secondary py-2 px-xl-5">
@@ -103,7 +105,7 @@
                                 <a href="" class="dropdown-item">Feminino</a>
                             </div>
                         </div>
-                        <a href="" class="nav-item nav-link">Camisas</a>
+                        <!-- <a href="" class="nav-item nav-link">Camisas</a>
                         <a href="" class="nav-item nav-link">Jeans</a>
                         <a href="" class="nav-item nav-link">Camisetas</a>
                         <a href="" class="nav-item nav-link">Jaquetas</a>
@@ -111,7 +113,7 @@
                         <a href="" class="nav-item nav-link">Tênis</a>
                         <a href="" class="nav-item nav-link">Acessórios</a>
                         <a href="" class="nav-item nav-link">Mochilas</a>
-                        <a href="" class="nav-item nav-link">Meias</a>
+                        <a href="" class="nav-item nav-link">Meias</a> -->
                     </div>
                 </nav>
             </div>
@@ -244,16 +246,16 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="images/camiseta1.png" alt="">
+                        <img id="apiImage1" class="img-fluid w-100" src="" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Camiseta Vintage - Estonada</h6>
+                        <h6 id="title1" class="text-truncate mb-3"></h6>
                         <div class="d-flex justify-content-center">
-                            <h6>R$99</h6><h6 class="text-muted ml-2"><del>R$150</del></h6>
+                            <h6 id="preco1"></h6><h6 class="text-muted ml-2"></h6>
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="1"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
                     </div>
                 </div>
@@ -261,16 +263,16 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="images/camiseta2.png" alt="">
+                        <img id="apiImage2" class="img-fluid w-100" src="" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Camiseta Vintage - Estonada</h6>
+                        <h6 id="title2" class="text-truncate mb-3"></h6>
                         <div class="d-flex justify-content-center">
-                            <h6>R$99</h6><h6 class="text-muted ml-2"><del>R$150</del></h6>
+                            <h6 id="preco2"></h6><h6 class="text-muted ml-2"></h6>
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="2"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
                     </div>
                 </div>
@@ -278,16 +280,16 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="images/camiseta3.png" alt="">
+                        <img id="apiImage3" class="img-fluid w-100" src="" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Camiseta Vintage - Estonada</h6>
+                        <h6 id="title3" class="text-truncate mb-3"></h6>
                         <div class="d-flex justify-content-center">
-                            <h6>R$99</h6><h6 class="text-muted ml-2"><del>R$150</del></h6>
+                            <h6 id="preco3"></h6><h6 class="text-muted ml-2"></h6>
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="3"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
                     </div>
                 </div>
@@ -295,16 +297,16 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="images/camiseta4.png" alt="">
+                        <img id="apiImage4" class="img-fluid w-100" src="" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Camiseta Vintage - Estonada</h6>
+                        <h6 id="title4" class="text-truncate mb-3"></h6>
                         <div class="d-flex justify-content-center">
-                            <h6>R$99</h6><h6 class="text-muted ml-2"><del>R$150</del></h6>
+                            <h6 id="preco4"></h6><h6 class="text-muted ml-2"></h6>
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="4"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
                     </div>
                 </div>
@@ -312,16 +314,16 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="images/camiseta5.png" alt="">
+                            <img id="apiImage5" class="img-fluid w-100" src="" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Camiseta Vintage - Estonada</h6>
+                        <h6 id="title5" class="text-truncate mb-3"></h6>
                         <div class="d-flex justify-content-center">
-                            <h6>R$99</h6><h6 class="text-muted ml-2"><del>R$150</del></h6>
+                            <h6 id="preco5"></h6><h6 class="text-muted ml-2"></h6>
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="5"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
                     </div>
                 </div>
@@ -329,16 +331,16 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="images/camiseta6.png" alt="">
+                            <img id="apiImage6" class="img-fluid w-100" src="" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Camiseta Vintage - Estonada</h6>
+                        <h6 id="title6" class="text-truncate mb-3"></h6>
                         <div class="d-flex justify-content-center">
-                            <h6>R$99</h6><h6 class="text-muted ml-2"><del>R$150</del></h6>
+                            <h6 id="preco6"></h6><h6 class="text-muted ml-2"></h6>
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="6"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
                     </div>
                 </div>
@@ -346,16 +348,16 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="images/camiseta7.png" alt="">
+                            <img id="apiImage7" class="img-fluid w-100" src="" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Camiseta Vintage - Estonada</h6>
+                        <h6 id="title7" class="text-truncate mb-3"></h6>
                         <div class="d-flex justify-content-center">
-                            <h6>R$99</h6><h6 class="text-muted ml-2"><del>R$150</del></h6>
+                            <h6 id="preco7"></h6><h6 class="text-muted ml-2"></h6>
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="7"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
                     </div>
                 </div>
@@ -363,22 +365,92 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img class="img-fluid w-100" src="images/camiseta8.png" alt="">
+                            <img id="apiImage8" class="img-fluid w-100" src="" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3">Camiseta Vintage - Estonada</h6>
+                        <h6 id="title8" class="text-truncate mb-3"></h6>
                         <div class="d-flex justify-content-center">
-                            <h6>R$99</h6><h6 class="text-muted ml-2"><del>R$150</del></h6>
+                            <h6 id="preco8"></h6><h6 class="text-muted ml-2"></h6>
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="8"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
                         <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img id="apiImage9" class="img-fluid w-100" src="" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 id="title9" class="text-truncate mb-3"></h6>
+                        <div class="d-flex justify-content-center">
+                            <h6 id="preco9"></h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="9"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img id="apiImage10" class="img-fluid w-100" src="" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 id="title10" class="text-truncate mb-3"></h6>
+                        <div class="d-flex justify-content-center">
+                            <h6 id="preco10"></h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="10"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img id="apiImage11" class="img-fluid w-100" src="" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 id="title11" class="text-truncate mb-3"></h6>
+                        <div class="d-flex justify-content-center">
+                            <h6 id="preco11"></h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="11"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img id="apiImage12" class="img-fluid w-100" src="" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 id="title12" class="text-truncate mb-3"></h6>
+                        <div class="d-flex justify-content-center">
+                            <h6 id="preco12"></h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a href="detalhes.html" class="btn btn-sm text-dark p-0 product-details-btn" data-id="12"><i class="fas fa-eye text-primary mr-1"></i>Detalhes</a>
+                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add no Carrinho</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+    
     <!-- Produtos em Destaque FIM -->
 
     <!-- Footer Inicio -->
@@ -430,12 +502,75 @@
                 </p>
             </div>
             <div class="col-md-6 px-xl-0 text-center text-md-right">
-                <img class="img-fluid" src="img/payments.png" alt="">
+                <!-- <img class="img-fluid" src="img/payments.png" alt=""> -->
             </div>
         </div>
     </div>
     <!-- Footer FIM -->
 
+    <script>
+
+        // Selecionando as imagens usando os IDs
+        var images = [];
+        var precos = [];
+        var titles = [];
+
+            for (var i = 1; i <= 12; i++) {
+                var image = document.querySelector('img[id="apiImage' + i + '"]');
+                images.push(image);
+
+                var precoProd = document.querySelector('h6[id="preco' + i + '"]');
+                precos.push(precoProd);
+
+                var titulo = document.querySelector('h6[id="title' + i + '"]');
+                titles.push(titulo);
+            }
+           
+
+        fetch('https://fakestoreapi.com/products/')
+        .then(response => response.json())
+        .then(produtos => {
+            for (var i = 0; i < images.length; i++) {
+                var imageUrl = produtos[i].image;
+                images[i].src = imageUrl;
+
+                images[i].style.width = '50px';
+                images[i].style.height = 'auto';
+
+                //Titulo do produto
+                var titleUrl = produtos[i].title;
+                // console.log(titleUrl);
+                titles[i].textContent = titleUrl;
+                console.log(titles[i].textContent);
+
+
+                //Preço dos produtos
+                var precoUrl = produtos[i].price;
+                // console.log(precoUrl);
+                precoUrl = "R$"+precoUrl;
+                precos[i].textContent = precoUrl;
+
+            }
+            var productDetailsBtns = document.getElementsByClassName('product-details-btn');
+
+
+            for (var i = 0; i < productDetailsBtns.length; i++) {
+                productDetailsBtns[i].addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var productId = event.target.dataset.id;
+                    if (productId) {
+                        var detalhesUrl = 'detalhes.html?id=' + productId;
+                        window.open(detalhesUrl, '_blank');
+                    }
+                });
+            }
+
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+        });
+
+    </script>
 
     <!-- Botão para voltar para o Topo -->
     <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>

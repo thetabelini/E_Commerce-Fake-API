@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>Detalhes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+   
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Diretorio css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bodyDetalhes">
+    
+    <!-- Barra superior inicio -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark" href="">Felipe Tabelini</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">1453577</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Sistemas da Informação</a>
+                </div>
+            </div>
+
+            <!-- Links para os meus sites -->
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="https://www.linkedin.com/in/felipetabelini/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="https://www.instagram.com/otabelini/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- fim link dos sites -->
+        </div>
+        
+        <!-- logo da loja -->
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="index.html" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">T</span>Store</h1>
+                </a>
+            </div>
+
+
+            <div class="col-lg-6 col-6 text-left"></div>
+
+
+            <!-- carrinho de compra e de produtos curtidos -->
+            <div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Barra superior -->
+
+   
+    
+      <!-- Adicione essas tags HTML na página detalhes.html -->
+    <img id="detalhesImagem" class="imgDetalhes" src="" alt="Imagem"/>
+    <h1 id="detalhesDescricao">Descrição do Produto</h1>
+    <p id="detalhesTexto"></p>
+    <p class="priceDetalhes" id="detalhesPreco"></p>
+
+    <script>
+        // Obtenha o ID do produto da URL
+        var productId = getProductIdFromURL(window.location.href);
+
+        // Verifique se o ID do produto foi obtido corretamente
+        if (productId !== null) {
+            // Faça uma chamada à API usando o ID do produto
+            fetch('https://fakestoreapi.com/products/' + productId)
+            .then(response => response.json())
+            .then(produto => {
+                // Preencha as tags HTML com os detalhes do produto
+                document.getElementById('detalhesImagem').src = produto.image;
+                document.getElementById('detalhesDescricao').textContent = produto.title;
+                document.getElementById('detalhesTexto').textContent = produto.description;
+                document.getElementById('detalhesPreco').textContent = 'R$' + produto.price;
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+            });
+        }
+
+        // Função para obter o ID do produto da URL
+        function getProductIdFromURL(url) {
+            var params = new URLSearchParams(new URL(url).search);
+            return params.get('id');
+        }
+    </script>
+
+    
+    <!-- Footer Inicio -->
+    <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">T</span>Store</h1>
+                </a>
+                <p>Loja de artigos vintage, no preço e qualidade que todos os amantes de street wear curte!</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Barreiro, Belo Horizonte, MG</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>tstore@street.wear.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>31 123456789</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Links de Acesso</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Início</a>
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Nossa Loja</a>
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Carrinho de Compras</a>
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Finalizar Compra</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Seu Nome e Sobrenome" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Seu E-mail"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Inscrever Agora!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-dark">
+                    &copy; <a class="text-dark font-weight-semi-bold" href="#">Tabela Store</a>. All Rights Reserved. Designed
+                    by Felipe Tabelini
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer FIM -->
+
+
+
+    <script>
+
+        // Selecionando as imagens usando os IDs
+        var images = [];
+            for (var i = 1; i <= 12; i++) {
+                var image = document.querySelector('img[id="apiImage' + i + '"]');
+                images.push(image);
+            }
+
+            var titles = [];
+            for (var i = 1; i <= 12; i++) {
+                var titulo = document.querySelector('h6[id="title' + i + '"]');
+                titles.push(titulo);
+            }
+            var precos = [];
+            for (var i = 1; i <= 12; i++) {
+                var precoProd = document.querySelector('h6[id="title' + i + '"]');
+                precos.push(precoProd);
+            }
+            
+
+        fetch('https://fakestoreapi.com/products/')
+        .then(response => response.json())
+        .then(produtos => {
+            for (var i = 0; i < images.length; i++) {
+                var imageUrl = produtos[i].image;
+                images[i].src = imageUrl;
+
+                images[i].style.width = '50px';
+                images[i].style.height = 'auto';
+
+                //Titulo do produto
+                var titleUrl = produtos[i].title;
+                // console.log(titleUrl);
+
+                titles[i].textContent = titleUrl;
+
+                //Preço dos produtos
+                var precoUrl = produtos[i].price;
+                console.log(precoUrl);
+                precoUrl = "R$"+precoUrl;
+                precos[i].textContent = precoUrl;
+
+            }
+
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+        });
+
+    </script>
+
+    <!-- Botão para voltar para o Topo -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+
+
+</body>
+
+</html>
